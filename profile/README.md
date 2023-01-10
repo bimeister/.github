@@ -7,6 +7,6 @@
 
 <div align="right">
 
-<a href="https://bimeister.com/">![LOGO](https://avatars.githubusercontent.com/u/76738569?s=200&v=4)</a>
+<a href="https://bimeister.com/">![LOGO](https://github.com/bimeister/.github-private/blob/opensource-documents/assets/logo.png?raw=true)</a>
 
 </div>
