@@ -119,16 +119,6 @@ Updating, improving and correcting the documentation
 
 -->
 
-## Styleguides
+## Styleguide
 
-### Commit Messages
-
-<!-- TODO
-
--->
-
-## Join The Project Team
-
-<!-- TODO -->
-
-<!-- omit in toc -->
+[Bimeister Style Guide](./STYLE.md)
