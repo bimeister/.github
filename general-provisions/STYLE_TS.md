@@ -1,6 +1,6 @@
-# TypeScript (JavaScript) Style Guide
+## TypeScript (JavaScript) Style Guide
 
-#### 1. Only clear and unambiguous names are used.
+### 1. Only clear and unambiguous names are used.
 
 > Maintainability is the core value of our system code base. – To maintain the code, you need to be able to read it. No need to save symbols, give as much context as needed so that you just need to know the syntax of the language to understand your idea.
 
@@ -43,7 +43,7 @@ const currentUserId: Uuid = this.currentUserService.id;
 
 ---
 
-#### 2. Shorthands in names are not allowed.
+### 2. Shorthands in names are not allowed.
 
 ...except for the generally accepted names of units of measurement and suffixes described in this document.
 
@@ -67,7 +67,7 @@ const constructorParams: unknown[] = [];
 
 ---
 
-#### 3. Values received in the class constructor as arguments cannot have the `public` access modifier.
+### 3. Values received in the class constructor as arguments cannot have the `public` access modifier.
 
 > The use of public properties in a constructor leads to a violation of encapsulation, and smearing responsibility across code sections.
 
@@ -95,7 +95,7 @@ class {
 
 ---
 
-#### 4. Only explicit typecasting should be used.
+### 4. Only explicit typecasting should be used.
 
 > Explicit type casting increases the readability of the code — you do not need to follow code branches to understand what is being converted into what.
 
@@ -114,7 +114,7 @@ if (childrenExist) {
 
 ---
 
-#### 5. The values of class members should be assigned at the place of declaration, if possible.
+### 5. The values of class members should be assigned at the place of declaration, if possible.
 
 > If it is possible to assign a property value at the place of the declaration, you should use it. — The constructor code becomes more compact due to the fact that only expressions that depend on the code that is executed in the constructor remain in it.
 
@@ -138,7 +138,7 @@ class {
 
 ---
 
-#### 6. Using `const` is preferable to using `let`.
+### 6. Using `const` is preferable to using `let`.
 
 > Constants are assigned only once, so the code that uses them reads better — no need to return to already read sections after each reassignment.
 
@@ -157,7 +157,7 @@ for (let index = 0; index < source.length; index++) {
 
 ---
 
-#### 7. `var` is not allowed.
+### 7. `var` is not allowed.
 
 > Variables created with `var` violate block scope, so they are difficult to control and read.
 
@@ -171,7 +171,7 @@ Object.defineProperty(Window, APP_STATE, { value: EMPTY_STATE });
 
 ---
 
-#### 8. `Enums` name must be a word in the singular form.
+### 8. `Enums` name must be a word in the singular form.
 
 > Enum describes several variants of a single value, so it must be named in the singular form.
 
@@ -195,7 +195,7 @@ const targetCity: City = City.Tokyo;
 
 ---
 
-#### 9. Access modifiers should not conflict with actual behavior.
+### 9. Access modifiers should not conflict with actual behavior.
 
 > If the `private readonly` value is actually being changed, `readonly` should not be used. \
 > If the `private` field is changed from outside, the modifier should be changed to `public`.
