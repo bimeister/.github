@@ -33,10 +33,12 @@ const isEmpty: boolean = myArray.length === 0;
 
 ```typescript
 // 👎 Inalid usage:
-const hasNoValues: boolean = myArray.length === 0;
+const activeTabId: Observable<Uuid> = this.tabsService.active;
+const currentUserId: Uuid = this.currentUserService.id;
 
 // 👍 Valid usage:
-const isEmpty: boolean = myArray.length === 0;
+const activeTabId$: Observable<Uuid> = this.tabsService.active$;
+const currentUserId: Uuid = this.currentUserService.id;
 ```
 
 ---
