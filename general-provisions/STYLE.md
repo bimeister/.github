@@ -4,7 +4,7 @@
 
 ### 1. Expressiveness is more important than brevity.
 
-> Developers with different expertise and different levels of immersion in the codebase are working on it. As we strive for continuous development of our projects, it is important that the codebase remains maintainable and extensible, no matter what language it is written in. \
+> All developers know the codebase differently. Developer expertise is also different. As we strive for continuous development of our projects, it is important that the codebase remains maintainable and extensible, no matter what language it is written in. \
 > For example, if we are writing Bash scripts, try to use full flags instead of shorthand ones, this will make your code readable even by people who are not particularly familiar with Bash:
 
 ```bash
@@ -37,7 +37,7 @@ rm --recursive --force ./ # instead of: rm -rf ./
 4. Changes containing commented code.
 5. Changes that contain unreachable or non-callable code.
 6. Unnecessarily deleted tests that were running.
-7. Other changes pointed out by the reviewer as invalid. – In the absence of a compromise, the team makes a decision by a simple majority vote.
+7. Other changes pointed out by the reviewer as invalid. In the absence of a compromise, the team makes a decision by a simple majority vote.
 
 ---
 

@@ -2,7 +2,7 @@
 
 ### 1. Only clear and unambiguous names are used.
 
-> Maintainability is the core value of our system code base. – To maintain the code, you need to be able to read it. No need to save symbols, give as much context as needed so that you just need to know the syntax of the language to understand your idea.
+> Maintainability is the core value of our system code base. To maintain the code, you need to be able to read it. No need to save symbols, give as much context as needed so that you just need to know the syntax of the language to understand your idea.
 
 ```javascript
 // 👎 Inalid usage:
@@ -65,6 +65,18 @@ const delayMs: number = 10_000;
 const constructorParams: unknown[] = [];
 ```
 
+#### 2.1. Measurables clarification:
+
+> If a variable is assigned with a value that has a unit of measure, the unit of measure must be specified in the variable name.
+
+```typescript
+// 👎 Inalid usage:
+const width: number = 10; // 10cm / 10px / 10rem / ...
+
+// 👍 Valid usage:
+const widthPx: number = 10;
+```
+
 ---
 
 ### 3. Values received in the class constructor as arguments cannot have the `public` access modifier.
@@ -75,20 +87,20 @@ const constructorParams: unknown[] = [];
 // 👎 Inalid usage:
 class {
   constructor(
-    public readonly injector: Injector,
-    public readonly renderer: Renderer
+    public readonly elementView: View,
+    public readonly router: Router
   ) {}
 }
 
 // 👍 Valid usage:
 class {
-  public readonly injector: Injector,
+  public readonly elementView: View,
 
   constructor(
-    injector: Injector,
-    private readonly renderer: Renderer
+    view: View,
+    private readonly router: Router
   ) {
-    this.injector = injector;
+    this.elementView = view;
   }
 }
 ```
